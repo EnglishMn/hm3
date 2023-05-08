@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: {{ .Release.Namespace }}
+data:
+  db_url: {{ printf "jdbc:postgresql://%s:%s/%s" .Values.postgres.host .Values.postgres.port .Values.postgres.database | quote }}

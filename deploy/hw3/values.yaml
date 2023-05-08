@@ -1,0 +1,13 @@
+image:
+  repository: anglihan/hw3
+  tag: latest
+
+postgres:
+  port: "5432"
+  database: users_db
+  host: postgres
+
+replicaCount: 3
+
+ingress:
+  host: "arch.homework"

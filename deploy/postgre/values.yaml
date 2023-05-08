@@ -1,0 +1,11 @@
+fullnameOverride: postgres
+global:
+  postgresql:
+    auth:
+      username: otus_users
+      password: root
+      database: users_db
+
+service:
+  type: NodePort
+  port: 5432
