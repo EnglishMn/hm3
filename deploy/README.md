@@ -7,3 +7,6 @@
 
 ###Деплой приложения
 - helm install hw3 ./hw3 --namespace=otus-homework
+
+###Postman collection json
+- postman/otus-hw3.postman_collection.json
